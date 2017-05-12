@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Debug
  * Description: Handy debugging functions.
- * Version: 2
+ * Version: 2.0.1
  * Author: Česlav Przywara <cp@bluechip>
  * Author URI: http://www.bluechip.at
  */
@@ -29,7 +29,7 @@ function dump() {
  */
 function backtrace() {
 	if ( true === WP_DEBUG ) {
-		$e = new Exception();
+		$e = new \Exception();
 		error_log(PHP_EOL . $e->getTraceAsString());
 	}
 }

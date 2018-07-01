@@ -14,12 +14,13 @@ namespace Debug;
  * objects are printed via print_r, any other type is printed via var_export
  * @param mixed $	Variable(s) you want to print to error log.
  */
-function dump() {
-	if ( true === WP_DEBUG ) {
-		foreach (func_get_args() as $arg) {
-			error_log((is_array($arg) || is_object($arg)) ? print_r($arg, true) : var_export($arg, true));
-		}
-	}
+function dump()
+{
+    if (true === WP_DEBUG) {
+        foreach (func_get_args() as $arg) {
+            error_log((is_array($arg) || is_object($arg)) ? print_r($arg, true) : var_export($arg, true));
+        }
+    }
 }
 
 
@@ -27,9 +28,10 @@ function dump() {
  * Print backtrace to error log, if WP_DEBUG is true.
  * @link http://php.net/manual/en/function.debug-print-backtrace.php#92542
  */
-function backtrace() {
-	if ( true === WP_DEBUG ) {
-		$e = new \Exception();
-		error_log(PHP_EOL . $e->getTraceAsString());
-	}
+function backtrace()
+{
+    if (true === WP_DEBUG) {
+        $e = new \Exception();
+        error_log(PHP_EOL . $e->getTraceAsString());
+    }
 }

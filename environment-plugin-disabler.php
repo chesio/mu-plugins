@@ -4,6 +4,7 @@
  * Description: Disables plugins based on environment configuration.
  * Version: 20180701
  * Author: Česlav Przywara
+ * Author URI: https://www.chesio.com
  * Plugin URI: https://github.com/chesio/mu-plugins
  * Inspired by: https://roots.io/guides/how-to-disable-plugins-on-certain-environments/
  */

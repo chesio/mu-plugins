@@ -3,6 +3,7 @@
  * Plugin Name: Environment Plugin Disabler
  * Description: Disables plugins based on environment configuration.
  * Version: 20180701
+ * Requires PHP: 7.0
  * Author: Česlav Przywara
  * Author URI: https://www.chesio.com
  * Plugin URI: https://github.com/chesio/mu-plugins
